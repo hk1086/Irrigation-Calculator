@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Irrigation Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Irrigation Recommendation System</h1>
+    <form id="irrigationForm">
+        <label for="crop">Select Crop Type:</label>
+        <select id="crop">
+            <option value="corn">Corn</option>
+            <option value="wheat">Wheat</option>
+            <option value="soybeans">Soybeans</option>
+            <option value="alfalfa">Alfalfa</option>
+            <option value="cotton">Cotton</option>
+            <option value="rice">Rice</option>
+            <option value="barley">Barley</option>
+            <option value="sorghum">Sorghum</option>
+            <option value="peanuts">Peanuts</option>
+            <option value="potatoes">Potatoes</option>
+            <option value="sugarcane">Sugarcane</option>
+            <option value="tobacco">Tobacco</option>
+            <option value="rye">Rye</option>
+            <option value="oats">Oats</option>
+        </select>
+
+        <label for="rainfall">Rainfall (inches):</label>
+        <input type="number" id="rainfall" step="0.1" required>
+
+        <label for="temperature">Temperature (°F):</label>
+        <input type="number" id="temperature" required>
+
+        <button type="submit">Calculate</button>
+    </form>
+
+    <h2>Result:</h2>
+    <p id="result"></p>
+
+    <script src="script.js"></script>
+</body>
+</html>
